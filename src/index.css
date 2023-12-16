@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  overflow: hidden;
+}
+
+.loginPage01 {
+  background-image: url(assets/loginBg02.svg);
+  background-position: left;
+  background-size: cover;
+}
+
+.loginPage02 {
+background-image: url(assets/loginBg01.svg);
+background-position: left;
+background-size: cover;
+}
+
+
+
+/* Add this CSS in your styles */
+.spinner-container {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left: 4px solid white;
+  /* Use your primary color here */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.staticCard {
+  background:  url(assets/staticCrdBg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
